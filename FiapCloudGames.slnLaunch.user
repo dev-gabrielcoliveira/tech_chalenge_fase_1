@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "FiapCloudGames\\FiapCloudGames.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Infrastructure\\Infrastructure.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Core\\Core.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
