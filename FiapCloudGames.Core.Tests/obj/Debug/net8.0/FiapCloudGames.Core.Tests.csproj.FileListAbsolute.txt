@@ -97,3 +97,4 @@ C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\refin
 C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapCloudGames.Core.Tests.pdb
 C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapCloudGames.Core.Tests.genruntimeconfig.cache
 C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\ref\FiapCloudGames.Core.Tests.dll
+C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapCloudGames.Core.Tests.sourcelink.json

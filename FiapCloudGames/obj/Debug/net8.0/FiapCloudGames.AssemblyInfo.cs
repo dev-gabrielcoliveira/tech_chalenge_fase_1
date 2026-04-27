@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FiapCloudGames")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93830315f54e468d2d3a4fbddf44900863c4afe8")]
 [assembly: System.Reflection.AssemblyProductAttribute("FiapCloudGames")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FiapCloudGames")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

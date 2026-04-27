@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{4F847EE1-544
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiapCloudGames.Core.Tests", "FiapCloudGames.Core.Tests\FiapCloudGames.Core.Tests.csproj", "{A67602BD-EA8D-4989-9FEC-12B4350B0A5D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiapCloudGames.BDD.Tests", "FiapCloudGames.BDD.Tests\FiapCloudGames.BDD.Tests.csproj", "{2B795714-96A4-412C-BB9C-D80355A90F5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{A67602BD-EA8D-4989-9FEC-12B4350B0A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A67602BD-EA8D-4989-9FEC-12B4350B0A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A67602BD-EA8D-4989-9FEC-12B4350B0A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B795714-96A4-412C-BB9C-D80355A90F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B795714-96A4-412C-BB9C-D80355A90F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B795714-96A4-412C-BB9C-D80355A90F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B795714-96A4-412C-BB9C-D80355A90F5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{5ED06CAD-956C-C94D-BC0C-E89E30A887C2} = {4F847EE1-5440-4F61-BDC6-B9FE0D912BD9}
 		{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83} = {4F847EE1-5440-4F61-BDC6-B9FE0D912BD9}
 		{A67602BD-EA8D-4989-9FEC-12B4350B0A5D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{2B795714-96A4-412C-BB9C-D80355A90F5E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6B74FA04-5145-4863-A7C4-844C94B075D6}

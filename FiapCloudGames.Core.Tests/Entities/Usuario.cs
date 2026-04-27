@@ -9,13 +9,13 @@ namespace FiapCloudGames.Core.Tests.Entities
     public class Usuario
     {
 
-        public required string Nome { get; set; }
+        public string Nome { get; set; }
 
-        public required string Email { get; set; }
+        public string Email { get; set; }
 
-        public required string Senha { get; set; }
+        public string Senha { get; set; }
 
-        public required string Situacao { get; set; }
+        public string Situacao { get; set; }
 
     }
 }
