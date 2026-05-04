@@ -22,7 +22,7 @@ Esta primeira fase do projeto foca no cadastro e autenticação de usuários.
 ### 👤 Usuários
 - Cadastro de usuários
 - Autenticação (login)
-- Controle de acesso por perfil (Admin / Usuário)
+- Controle de acesso por perfil (Administrador / Usuário)
 - Listagem de usuários
 
 ---

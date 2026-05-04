@@ -5,30 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{048447A3-07FA-4CEA-B61E-53C1B57C6CB2}|FiapCloudGames\\FiapCloudGames.csproj|c:\\techchallenge\\fiapcloudgames\\fiapcloudgames\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{048447A3-07FA-4CEA-B61E-53C1B57C6CB2}|FiapCloudGames\\FiapCloudGames.csproj|solutionrelative:fiapcloudgames\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{048447A3-07FA-4CEA-B61E-53C1B57C6CB2}|FiapCloudGames\\FiapCloudGames.csproj|c:\\techchallenge\\fiapcloudgames\\fiapcloudgames\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{048447A3-07FA-4CEA-B61E-53C1B57C6CB2}|FiapCloudGames\\FiapCloudGames.csproj|solutionrelative:fiapcloudgames\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{048447A3-07FA-4CEA-B61E-53C1B57C6CB2}|FiapCloudGames\\FiapCloudGames.csproj|c:\\techchallenge\\fiapcloudgames\\fiapcloudgames\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{048447A3-07FA-4CEA-B61E-53C1B57C6CB2}|FiapCloudGames\\FiapCloudGames.csproj|solutionrelative:fiapcloudgames\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{048447A3-07FA-4CEA-B61E-53C1B57C6CB2}|FiapCloudGames\\FiapCloudGames.csproj|c:\\techchallenge\\fiapcloudgames\\fiapcloudgames\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{048447A3-07FA-4CEA-B61E-53C1B57C6CB2}|FiapCloudGames\\FiapCloudGames.csproj|solutionrelative:fiapcloudgames\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{048447A3-07FA-4CEA-B61E-53C1B57C6CB2}|FiapCloudGames\\FiapCloudGames.csproj|c:\\techchallenge\\fiapcloudgames\\fiapcloudgames\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{048447A3-07FA-4CEA-B61E-53C1B57C6CB2}|FiapCloudGames\\FiapCloudGames.csproj|solutionrelative:fiapcloudgames\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{048447A3-07FA-4CEA-B61E-53C1B57C6CB2}|FiapCloudGames\\FiapCloudGames.csproj|c:\\techchallenge\\fiapcloudgames\\fiapcloudgames\\services\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{048447A3-07FA-4CEA-B61E-53C1B57C6CB2}|FiapCloudGames\\FiapCloudGames.csproj|solutionrelative:fiapcloudgames\\services\\interface\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|c:\\techchallenge\\fiapcloudgames\\infrastructure\\repository\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5872AEB3-BAA3-FE31-B0EB-0FB6DBEDCF83}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repository\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,36 +14,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\TechChallenge\\FiapCloudGames\\FiapCloudGames\\Services\\Interface\\IAuthService.cs",
-              "RelativeDocumentMoniker": "FiapCloudGames\\Services\\Interface\\IAuthService.cs",
-              "ToolTip": "C:\\TechChallenge\\FiapCloudGames\\FiapCloudGames\\Services\\Interface\\IAuthService.cs",
-              "RelativeToolTip": "FiapCloudGames\\Services\\Interface\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T02:57:42.907Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EFRepository.cs",
-              "DocumentMoniker": "C:\\TechChallenge\\FiapCloudGames\\Infrastructure\\Repository\\EFRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repository\\EFRepository.cs",
-              "ToolTip": "C:\\TechChallenge\\FiapCloudGames\\Infrastructure\\Repository\\EFRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repository\\EFRepository.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAewCcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T02:50:48.313Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -80,58 +31,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-04T02:43:17.378Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsuarioService.cs",
-              "DocumentMoniker": "C:\\TechChallenge\\FiapCloudGames\\FiapCloudGames\\Services\\UsuarioService.cs",
-              "RelativeDocumentMoniker": "FiapCloudGames\\Services\\UsuarioService.cs",
-              "ToolTip": "C:\\TechChallenge\\FiapCloudGames\\FiapCloudGames\\Services\\UsuarioService.cs",
-              "RelativeToolTip": "FiapCloudGames\\Services\\UsuarioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwB0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T02:42:58.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\TechChallenge\\FiapCloudGames\\FiapCloudGames\\Program.cs",
-              "RelativeDocumentMoniker": "FiapCloudGames\\Program.cs",
-              "ToolTip": "C:\\TechChallenge\\FiapCloudGames\\FiapCloudGames\\Program.cs",
-              "RelativeToolTip": "FiapCloudGames\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T02:34:09.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\TechChallenge\\FiapCloudGames\\FiapCloudGames\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "FiapCloudGames\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\TechChallenge\\FiapCloudGames\\FiapCloudGames\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "FiapCloudGames\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAD4AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T02:32:45.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\TechChallenge\\FiapCloudGames\\FiapCloudGames\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "FiapCloudGames\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\TechChallenge\\FiapCloudGames\\FiapCloudGames\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "FiapCloudGames\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAApwCYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T02:26:30.755Z",
               "EditorCaption": ""
             }
           ]
