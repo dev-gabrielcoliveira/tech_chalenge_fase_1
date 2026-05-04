@@ -16,6 +16,40 @@ namespace FiapCloudGames.Services
             _validator = new UsuarioValidator();
         }
 
+
+        public Usuario? ObterPorEmail(string email)
+        {
+
+            // Como existe o campo situação é necessário buscar por e-mail e pela situação Ativo.
+
+            var usuario = _repository.ObterTodos()
+                .Where(ent => ent.Situacao == "Ativo" && ent.Email == email)
+                .FirstOrDefault();
+
+            return usuario;
+        }
+
+        public Usuario? ObterPorId(int id)
+        {
+
+            // Como existe o campo situação é necessário buscar por id e pela situação Ativo.
+
+            var usuario = _repository.ObterTodos()
+                .Where(ent => ent.Situacao == "Ativo" && ent.Id == id)
+                .FirstOrDefault();
+
+            return usuario;
+        }
+
+        public List<Usuario> ObterTodos()
+        {
+            var listausuario = _repository.ObterTodos()
+                .Where(ent => ent.Situacao == "Ativo")
+                .ToList();
+
+            return listausuario;
+        }
+
         public void CriarUsuario(UsuarioInput input)
         {
             if (!_validator.EmailValido(input.Email))

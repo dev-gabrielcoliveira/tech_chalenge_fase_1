@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FiapCloudGames</name>
+    </assembly>
+    <members>
+        <member name="M:FiapCloudGames.Controllers.AuthController.Login(System.String,System.String,System.String)">
+            <summary>
+            Realiza a autenticação do usuário.
+            </summary>
+            <param name="request">Credenciais de acesso email, senha e papel.</param>
+            <returns>Token de autenticação.</returns>
+            <response code="200">Autenticação realizada com sucesso</response>
+            <response code="401">Credenciais inválidas</response>
+        </member>
+        <member name="T:FiapCloudGames.Controllers.UsuarioController">
+            <summary>
+            Responsável por gerenciar os usuários da plataforma.
+            </summary>
+            <remarks>
+            Permite criar, atualizar, remover e autenticar usuários.
+            </remarks>
+        </member>
+        <member name="M:FiapCloudGames.Controllers.UsuarioController.Get">
+            <summary>
+            Busca todos usuários.
+            </summary>
+            <returns>Listagem de todos usuários ativo do sistema.</returns>
+            <response code="200">Lista de usuários obtida com sucesso</response>
+            <response code="400">Dados inválidos</response>
+        </member>
+        <member name="M:FiapCloudGames.Controllers.UsuarioController.GetById(System.Int32)">
+            <summary>
+            Buscando usuário específico.
+            </summary>
+            <returns>Dados de um usuário específico.</returns>
+            <response code="200">Dados do usuário obtido com sucesso</response>
+            <response code="400">Dados inválidos</response>
+            <response code="404">Usuário não encontrado</response>
+        </member>
+        <member name="M:FiapCloudGames.Controllers.UsuarioController.Post(Core.Entity.Input.UsuarioInput)">
+            <summary>
+            Cria um novo usuário.
+            </summary>
+            <param name="request">Dados do usuário a ser criado.</param>
+            <returns>Usuário criado.</returns>
+            <response code="201">Usuário criado com sucesso</response>
+            <response code="400">Dados inválidos</response>
+        </member>
+        <member name="M:FiapCloudGames.Controllers.UsuarioController.Update(Core.Entity.Input.UsuarioInput)">
+            <summary>
+            Atualiza os dados de um usuário existente.
+            </summary>
+            <param name="request">Novos dados do usuário.</param>
+            <returns>Usuário atualizado.</returns>
+            <response code="200">Usuário atualizado com sucesso</response>
+            <response code="400">Dados inválidos</response>
+            <response code="404">Usuário não encontrado</response>
+        </member>
+        <member name="M:FiapCloudGames.Controllers.UsuarioController.Delete(System.Int32)">
+            <summary>
+            Remove um usuário do sistema.
+            </summary>
+            <param name="id">Identificador do usuário.</param>
+            <returns>Confirmação da remoção.</returns>
+            <response code="200">Usuário removido com sucesso</response>
+            <response code="400">Dados inválidos</response>
+            <response code="404">Usuário não encontrado</response>
+        </member>
+    </members>
+</doc>

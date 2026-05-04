@@ -10,6 +10,7 @@
         "tags": [
           "Auth"
         ],
+        "summary": "Realiza a autenticação do usuário.",
         "parameters": [
           {
             "name": "email",
@@ -35,7 +36,10 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Autenticação realizada com sucesso"
+          },
+          "401": {
+            "description": "Credenciais inválidas"
           }
         }
       }
@@ -45,9 +49,13 @@
         "tags": [
           "Usuario"
         ],
+        "summary": "Busca todos usuários.",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Lista de usuários obtida com sucesso"
+          },
+          "400": {
+            "description": "Dados inválidos"
           }
         }
       },
@@ -55,6 +63,7 @@
         "tags": [
           "Usuario"
         ],
+        "summary": "Cria um novo usuário.",
         "requestBody": {
           "content": {
             "application/json": {
@@ -77,6 +86,12 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "201": {
+            "description": "Usuário criado com sucesso"
+          },
+          "400": {
+            "description": "Dados inválidos"
           }
         }
       },
@@ -84,6 +99,7 @@
         "tags": [
           "Usuario"
         ],
+        "summary": "Atualiza os dados de um usuário existente.",
         "requestBody": {
           "content": {
             "application/json": {
@@ -105,7 +121,13 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Usuário atualizado com sucesso"
+          },
+          "400": {
+            "description": "Dados inválidos"
+          },
+          "404": {
+            "description": "Usuário não encontrado"
           }
         }
       }
@@ -115,6 +137,7 @@
         "tags": [
           "Usuario"
         ],
+        "summary": "Buscando usuário específico.",
         "parameters": [
           {
             "name": "id",
@@ -128,7 +151,13 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Dados do usuário obtido com sucesso"
+          },
+          "400": {
+            "description": "Dados inválidos"
+          },
+          "404": {
+            "description": "Usuário não encontrado"
           }
         }
       },
@@ -136,10 +165,12 @@
         "tags": [
           "Usuario"
         ],
+        "summary": "Remove um usuário do sistema.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "Identificador do usuário.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -149,7 +180,13 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Usuário removido com sucesso"
+          },
+          "400": {
+            "description": "Dados inválidos"
+          },
+          "404": {
+            "description": "Usuário não encontrado"
           }
         }
       }

@@ -1,0 +1,85 @@
+2026-05-04 00:24:19.752 -04:00 [INF] User profile is available. Using 'C:\Users\GABRIEL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-04 00:24:20.109 -04:00 [INF] Now listening on: http://localhost:5266
+2026-05-04 00:24:20.216 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 00:24:20.239 -04:00 [INF] Hosting environment: Development
+2026-05-04 00:24:20.242 -04:00 [INF] Content root path: C:\TechChallenge\FiapCloudGames\FiapCloudGames
+2026-05-04 00:24:20.993 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/swagger/index.html - null null
+2026-05-04 00:24:21.999 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_vs/browserLink - null null
+2026-05-04 00:24:22.000 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-04 00:24:22.014 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/swagger/index.html - 200 null text/html;charset=utf-8 1036.5413ms
+2026-05-04 00:24:22.041 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 41.3156ms
+2026-05-04 00:24:22.152 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/_vs/browserLink - 200 null text/javascript; charset=UTF-8 153.2253ms
+2026-05-04 00:24:22.219 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/swagger/v1/swagger.json - null null
+2026-05-04 00:24:22.258 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.533ms
+2026-05-04 00:25:00.120 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5266/Auth?email=teste%40gmail.com&senha=123&papel=Administrador - null 0
+2026-05-04 00:25:00.134 -04:00 [WRN] Failed to determine the https port for redirect.
+2026-05-04 00:25:00.144 -04:00 [INF] Executing endpoint 'FiapCloudGames.Controllers.AuthController.Login (FiapCloudGames)'
+2026-05-04 00:25:00.168 -04:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String, System.String, System.String) on controller FiapCloudGames.Controllers.AuthController (FiapCloudGames).
+2026-05-04 00:25:10.650 -04:00 [INF] Tentativa de login para o email teste@gmail.com
+2026-05-04 00:25:12.236 -04:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Nome], [u].[Senha], [u].[Situacao]
+FROM [usuario] AS [u]
+2026-05-04 00:25:21.837 -04:00 [WRN] Login falhou para o email teste@gmail.com
+2026-05-04 00:25:23.287 -04:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-05-04 00:25:23.308 -04:00 [INF] Executed action FiapCloudGames.Controllers.AuthController.Login (FiapCloudGames) in 23130.4172ms
+2026-05-04 00:25:23.316 -04:00 [INF] Executed endpoint 'FiapCloudGames.Controllers.AuthController.Login (FiapCloudGames)'
+2026-05-04 00:25:23.335 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5266/Auth?email=teste%40gmail.com&senha=123&papel=Administrador - 401 null application/problem+json; charset=utf-8 23214.7151ms
+2026-05-04 00:25:53.906 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5266/Auth?email=teste%40gmail.com&senha=Adm1n%26&papel=Administrador - null 0
+2026-05-04 00:25:53.933 -04:00 [INF] Executing endpoint 'FiapCloudGames.Controllers.AuthController.Login (FiapCloudGames)'
+2026-05-04 00:25:53.936 -04:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String, System.String, System.String) on controller FiapCloudGames.Controllers.AuthController (FiapCloudGames).
+2026-05-04 00:25:55.743 -04:00 [INF] Tentativa de login para o email teste@gmail.com
+2026-05-04 00:25:56.884 -04:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Nome], [u].[Senha], [u].[Situacao]
+FROM [usuario] AS [u]
+2026-05-04 00:25:56.891 -04:00 [INF] Login realizado com sucesso para teste@gmail.com
+2026-05-04 00:25:57.585 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-05-04 00:25:57.588 -04:00 [INF] Executed action FiapCloudGames.Controllers.AuthController.Login (FiapCloudGames) in 3649.5189ms
+2026-05-04 00:25:57.591 -04:00 [INF] Executed endpoint 'FiapCloudGames.Controllers.AuthController.Login (FiapCloudGames)'
+2026-05-04 00:25:57.593 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5266/Auth?email=teste%40gmail.com&senha=Adm1n%26&papel=Administrador - 200 null text/plain; charset=utf-8 3688.524ms
+2026-05-04 00:26:28.471 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/Usuario - null null
+2026-05-04 00:26:28.525 -04:00 [INF] Executing endpoint 'FiapCloudGames.Controllers.UsuarioController.Get (FiapCloudGames)'
+2026-05-04 00:26:28.532 -04:00 [INF] Route matched with {action = "Get", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller FiapCloudGames.Controllers.UsuarioController (FiapCloudGames).
+2026-05-04 00:26:28.559 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Nome], [u].[Senha], [u].[Situacao]
+FROM [usuario] AS [u]
+2026-05-04 00:26:28.565 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Entity.Usuario, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-04 00:26:28.569 -04:00 [INF] Executed action FiapCloudGames.Controllers.UsuarioController.Get (FiapCloudGames) in 31.7465ms
+2026-05-04 00:26:28.573 -04:00 [INF] Executed endpoint 'FiapCloudGames.Controllers.UsuarioController.Get (FiapCloudGames)'
+2026-05-04 00:26:28.576 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/Usuario - 200 null application/json; charset=utf-8 104.7936ms
+2026-05-04 00:26:44.311 -04:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5266/Usuario/2 - null null
+2026-05-04 00:26:44.322 -04:00 [INF] Executing endpoint 'FiapCloudGames.Controllers.UsuarioController.Delete (FiapCloudGames)'
+2026-05-04 00:26:44.326 -04:00 [INF] Route matched with {action = "Delete", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(Int32) on controller FiapCloudGames.Controllers.UsuarioController (FiapCloudGames).
+2026-05-04 00:26:44.334 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Nome], [u].[Senha], [u].[Situacao]
+FROM [usuario] AS [u]
+2026-05-04 00:26:44.449 -04:00 [INF] Executed DbCommand (41ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 100) (DbType = AnsiString), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (Size = 32) (DbType = AnsiString), @p3='?' (Size = 10) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [usuario] SET [Email] = @p0, [Nome] = @p1, [Senha] = @p2, [Situacao] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+2026-05-04 00:26:44.459 -04:00 [INF] Usuário teste2@gmail.com foi removido
+2026-05-04 00:26:44.466 -04:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2026-05-04 00:26:44.468 -04:00 [INF] Executed action FiapCloudGames.Controllers.UsuarioController.Delete (FiapCloudGames) in 137.9252ms
+2026-05-04 00:26:44.471 -04:00 [INF] Executed endpoint 'FiapCloudGames.Controllers.UsuarioController.Delete (FiapCloudGames)'
+2026-05-04 00:26:44.473 -04:00 [INF] Request finished HTTP/1.1 PATCH http://localhost:5266/Usuario/2 - 200 0 null 162.447ms
+2026-05-04 00:27:13.231 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/Usuario - null null
+2026-05-04 00:27:13.253 -04:00 [INF] Executing endpoint 'FiapCloudGames.Controllers.UsuarioController.Get (FiapCloudGames)'
+2026-05-04 00:27:13.256 -04:00 [INF] Route matched with {action = "Get", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller FiapCloudGames.Controllers.UsuarioController (FiapCloudGames).
+2026-05-04 00:27:13.262 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Nome], [u].[Senha], [u].[Situacao]
+FROM [usuario] AS [u]
+2026-05-04 00:27:13.267 -04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Core.Entity.Usuario, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-04 00:27:13.271 -04:00 [INF] Executed action FiapCloudGames.Controllers.UsuarioController.Get (FiapCloudGames) in 11.0592ms
+2026-05-04 00:27:13.280 -04:00 [INF] Executed endpoint 'FiapCloudGames.Controllers.UsuarioController.Get (FiapCloudGames)'
+2026-05-04 00:27:13.283 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/Usuario - 200 null application/json; charset=utf-8 53.4799ms
+2026-05-04 00:27:23.389 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5266/Usuario/1 - null null
+2026-05-04 00:27:23.397 -04:00 [INF] Executing endpoint 'FiapCloudGames.Controllers.UsuarioController.GetById (FiapCloudGames)'
+2026-05-04 00:27:23.404 -04:00 [INF] Route matched with {action = "GetById", controller = "Usuario"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(Int32) on controller FiapCloudGames.Controllers.UsuarioController (FiapCloudGames).
+2026-05-04 00:27:26.831 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Nome], [u].[Senha], [u].[Situacao]
+FROM [usuario] AS [u]
+2026-05-04 00:27:26.838 -04:00 [INF] Executing OkObjectResult, writing value of type 'Core.Entity.Usuario'.
+2026-05-04 00:27:26.843 -04:00 [INF] Executed action FiapCloudGames.Controllers.UsuarioController.GetById (FiapCloudGames) in 3432.9448ms
+2026-05-04 00:27:26.846 -04:00 [INF] Executed endpoint 'FiapCloudGames.Controllers.UsuarioController.GetById (FiapCloudGames)'
+2026-05-04 00:27:26.847 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5266/Usuario/1 - 200 null application/json; charset=utf-8 3458.7856ms

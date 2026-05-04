@@ -1,8 +1,3 @@
-C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapCloudGames.Core.Tests.csproj.AssemblyReference.cache
-C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapCloudGames.Core.Tests.GeneratedMSBuildEditorConfig.editorconfig
-C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapCloudGames.Core.Tests.AssemblyInfoInputs.cache
-C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapCloudGames.Core.Tests.AssemblyInfo.cs
-C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapCloudGames.Core.Tests.csproj.CoreCompileInputs.cache
 C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\bin\Debug\net8.0\testhost.dll
 C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\bin\Debug\net8.0\testhost.exe
 C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
@@ -91,10 +86,15 @@ C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\bin\Debug\net8.0\zh-Ha
 C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapCloudGames.Core.Tests.csproj.AssemblyReference.cache
+C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapCloudGames.Core.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapCloudGames.Core.Tests.AssemblyInfoInputs.cache
+C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapCloudGames.Core.Tests.AssemblyInfo.cs
+C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapCloudGames.Core.Tests.csproj.CoreCompileInputs.cache
+C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapCloudGames.Core.Tests.sourcelink.json
 C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapClou.A3A2DBF5.Up2Date
 C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapCloudGames.Core.Tests.dll
 C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\refint\FiapCloudGames.Core.Tests.dll
 C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapCloudGames.Core.Tests.pdb
 C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapCloudGames.Core.Tests.genruntimeconfig.cache
 C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\ref\FiapCloudGames.Core.Tests.dll
-C:\TechChallenge\FiapCloudGames\FiapCloudGames.Core.Tests\obj\Debug\net8.0\FiapCloudGames.Core.Tests.sourcelink.json
