@@ -122,6 +122,9 @@
           },
           "400": {
             "description": "Dados inválidos"
+          },
+          "404": {
+            "description": "Usuário não encontrado"
           }
         }
       }
@@ -181,6 +184,9 @@
           },
           "400": {
             "description": "Dados inválidos"
+          },
+          "404": {
+            "description": "Usuário não encontrado"
           }
         }
       }

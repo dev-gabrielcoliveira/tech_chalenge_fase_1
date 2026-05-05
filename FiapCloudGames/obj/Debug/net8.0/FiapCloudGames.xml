@@ -55,6 +55,7 @@
             <returns>Usuário atualizado.</returns>
             <response code="200">Usuário atualizado com sucesso</response>
             <response code="400">Dados inválidos</response>
+            <response code="404">Usuário não encontrado</response>
         </member>
         <member name="M:FiapCloudGames.Controllers.UsuarioController.Delete(System.Int32)">
             <summary>
@@ -64,6 +65,7 @@
             <returns>Confirmação da remoção.</returns>
             <response code="204">Usuário removido com sucesso</response>
             <response code="400">Dados inválidos</response>
+            <response code="404">Usuário não encontrado</response>
         </member>
     </members>
 </doc>
