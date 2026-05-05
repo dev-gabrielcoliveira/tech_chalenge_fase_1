@@ -38,13 +38,13 @@
             <response code="400">Dados inválidos</response>
             <response code="404">Usuário não encontrado</response>
         </member>
-        <member name="M:FiapCloudGames.Controllers.UsuarioController.Post(Core.Entity.Input.UsuarioInput)">
+        <member name="M:FiapCloudGames.Controllers.UsuarioController.Post(Core.Entity.Input.UsuarioInputIncluir)">
             <summary>
             Cria um novo usuário.
             </summary>
             <param name="request">Dados do usuário a ser criado.</param>
             <returns>Usuário criado.</returns>
-            <response code="201">Usuário criado com sucesso</response>
+            <response code="200">Usuário criado com sucesso</response>
             <response code="400">Dados inválidos</response>
         </member>
         <member name="M:FiapCloudGames.Controllers.UsuarioController.Update(Core.Entity.Input.UsuarioInput)">
@@ -55,7 +55,6 @@
             <returns>Usuário atualizado.</returns>
             <response code="200">Usuário atualizado com sucesso</response>
             <response code="400">Dados inválidos</response>
-            <response code="404">Usuário não encontrado</response>
         </member>
         <member name="M:FiapCloudGames.Controllers.UsuarioController.Delete(System.Int32)">
             <summary>
@@ -63,9 +62,8 @@
             </summary>
             <param name="id">Identificador do usuário.</param>
             <returns>Confirmação da remoção.</returns>
-            <response code="200">Usuário removido com sucesso</response>
+            <response code="204">Usuário removido com sucesso</response>
             <response code="400">Dados inválidos</response>
-            <response code="404">Usuário não encontrado</response>
         </member>
     </members>
 </doc>

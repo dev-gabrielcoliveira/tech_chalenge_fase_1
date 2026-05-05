@@ -68,26 +68,23 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioInput"
+                "$ref": "#/components/schemas/UsuarioInputIncluir"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioInput"
+                "$ref": "#/components/schemas/UsuarioInputIncluir"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioInput"
+                "$ref": "#/components/schemas/UsuarioInputIncluir"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK"
-          },
-          "201": {
             "description": "Usuário criado com sucesso"
           },
           "400": {
@@ -125,9 +122,6 @@
           },
           "400": {
             "description": "Dados inválidos"
-          },
-          "404": {
-            "description": "Usuário não encontrado"
           }
         }
       }
@@ -180,13 +174,13 @@
         ],
         "responses": {
           "200": {
+            "description": "OK"
+          },
+          "204": {
             "description": "Usuário removido com sucesso"
           },
           "400": {
             "description": "Dados inválidos"
-          },
-          "404": {
-            "description": "Usuário não encontrado"
           }
         }
       }
@@ -206,6 +200,29 @@
             "type": "integer",
             "format": "int32"
           },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "senha": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioInputIncluir": {
+        "required": [
+          "email",
+          "nome",
+          "senha"
+        ],
+        "type": "object",
+        "properties": {
           "nome": {
             "type": "string",
             "nullable": true

@@ -2,6 +2,7 @@
 using Core.Entity.Input;
 using Core.Repository.Interfaces;
 using FiapCloudGames.Core.Tests.Validators;
+using Infrastructure.Repository.Class;
 
 namespace FiapCloudGames.Services
 {
@@ -16,6 +17,73 @@ namespace FiapCloudGames.Services
             _validator = new UsuarioValidator();
         }
 
+        public void Alterar(Usuario usuario)
+        {
+
+            if (!_validator.EmailValido(usuario.Email))
+                throw new Exception("Email inválido");
+
+            if (!_validator.SenhaValida(usuario.Senha))
+                throw new Exception("Senha fraca");
+
+            if (!_validator.TamanhoMaximo(usuario.Nome, 50))
+                throw new Exception("Nome excede o tamanho máximo");
+
+            if (!_validator.TamanhoMaximo(usuario.Email, 100))
+                throw new Exception("E-mail excede o tamanho máximo");
+
+            if (!_validator.TamanhoMaximo(usuario.Senha, 32))
+                throw new Exception("Senha excede o tamanho máximo");
+
+            usuario.Nome = usuario.Nome;
+            usuario.Email = usuario.Email;
+            usuario.Senha = usuario.Senha;
+
+            _repository.Alterar(usuario);
+
+        }
+
+        public Usuario Criar(UsuarioInputIncluir input)
+        {
+            if (!_validator.EmailValido(input.Email))
+                throw new Exception("Email inválido");
+
+            if (!_validator.SenhaValida(input.Senha))
+                throw new Exception("Senha fraca");
+
+            if (!_validator.TamanhoMaximo(input.Nome, 50))
+                throw new Exception("Nome excede o tamanho máximo");
+
+            if (!_validator.TamanhoMaximo(input.Email, 100))
+                throw new Exception("E-mail excede o tamanho máximo");
+
+            if (!_validator.TamanhoMaximo(input.Senha, 32))
+                throw new Exception("Senha excede o tamanho máximo");
+
+            var usuario = new Usuario
+            {
+                Nome = input.Nome,
+                Email = input.Email,
+                Senha = input.Senha,
+                Situacao = "Ativo"
+            };
+
+            _repository.Cadastrar(usuario);
+
+            return usuario;
+        }
+
+        public void Excluir(int id)
+        {
+            var usuario = this.ObterPorId(id);
+
+            if (usuario == null)
+                throw new Exception("Usuário não encontrado");
+
+            usuario.Situacao = "Removido";
+
+            _repository.Alterar(usuario);
+        }
 
         public Usuario? ObterPorEmail(string email)
         {
@@ -50,23 +118,5 @@ namespace FiapCloudGames.Services
             return listausuario;
         }
 
-        public void CriarUsuario(UsuarioInput input)
-        {
-            if (!_validator.EmailValido(input.Email))
-                throw new Exception("Email inválido");
-
-            if (!_validator.SenhaValida(input.Senha))
-                throw new Exception("Senha fraca");
-
-            var usuario = new Usuario
-            {
-                Nome = input.Nome,
-                Email = input.Email,
-                Senha = input.Senha,
-                Situacao = "Ativo"
-            };
-
-            _repository.Cadastrar(usuario);
-        }
     }
 }

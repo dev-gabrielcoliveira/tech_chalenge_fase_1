@@ -45,7 +45,7 @@
     "Parameters": [
       {
         "Name": "usuarioInput",
-        "Type": "Core.Entity.Input.UsuarioInput",
+        "Type": "Core.Entity.Input.UsuarioInputIncluir",
         "IsRequired": true
       }
     ],

@@ -1,6 +1,7 @@
 ﻿using Core.Entity;
 using Core.Entity.Input;
 using Core.Repository.Interfaces;
+using FiapCloudGames.Core.Tests.Entities;
 using FiapCloudGames.Services;
 using Infrastructure.Repository.Class;
 using Microsoft.AspNetCore.Authorization;
@@ -82,18 +83,20 @@ namespace FiapCloudGames.Controllers
         /// </summary>
         /// <param name="request">Dados do usuário a ser criado.</param>
         /// <returns>Usuário criado.</returns>
-        /// <response code="201">Usuário criado com sucesso</response>
+        /// <response code="200">Usuário criado com sucesso</response>
         /// <response code="400">Dados inválidos</response>
         [HttpPost]
         [Authorize(Policy = "Administrador")]
-        public IActionResult Post([FromBody] UsuarioInput usuarioInput)
+        public IActionResult Post([FromBody] UsuarioInputIncluir usuarioInput)
         {
             try
             {
-                _usuarioService.CriarUsuario(usuarioInput);
+                var usuario = _usuarioService.Criar(usuarioInput);
+
+                // Usei o log com e-mail aqui para identificar qual usuário foi criado.
                 _logger.LogInformation("Usuário {Email} foi criado", usuarioInput.Email);
 
-                return Ok();
+                return Ok(usuario);
             }
             catch (Exception e)
             {
@@ -115,14 +118,26 @@ namespace FiapCloudGames.Controllers
         {
             try
             {
-                var usuario = _usuarioRepository.ObterPorId(usuarioInput.Id);
+                var usuario = _usuarioService.ObterPorId(usuarioInput.Id);
 
-                usuario.Nome = usuarioInput.Nome;
-                usuario.Senha = usuarioInput.Senha;
+                if (usuario == null)
+                    return NotFound("Usuário não encontrado");
 
-                _usuarioRepository.Alterar(usuario);
-                _logger.LogInformation("Usuário {Email} foi alterado", usuarioInput.Email);
-                return Ok();
+                try
+                {
+                    usuario.Nome = usuarioInput.Nome;
+                    usuario.Email = usuarioInput.Email;
+                    usuario.Senha = usuarioInput.Senha;
+
+                    _usuarioService.Alterar(usuario);
+                    _logger.LogInformation("Usuário {Id} foi alterado", usuario.Id);
+
+                    return Ok(usuario);
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest(ex.Message);
+                }
 
             }
             catch (Exception e)
@@ -137,34 +152,23 @@ namespace FiapCloudGames.Controllers
         /// </summary>
         /// <param name="id">Identificador do usuário.</param>
         /// <returns>Confirmação da remoção.</returns>
-        /// <response code="200">Usuário removido com sucesso</response>
+        /// <response code="204">Usuário removido com sucesso</response>
         /// <response code="400">Dados inválidos</response>
         /// <response code="404">Usuário não encontrado</response>
         [HttpPatch("{id:int}")]
         [Authorize(Policy = "Administrador")]
         public IActionResult Delete([FromRoute] int id)
         {
-            try
-            {
+            var usuario = _usuarioService.ObterPorId(id);
 
-                var usuario = _usuarioService.ObterPorId(id);
+            if (usuario == null)
+                return NotFound("Usuário não encontrado");
 
-                // Se o usuário for null já está Removido então não tem porque remover de novo.
-                if (usuario == null)
-                    return NotFound();
+            _usuarioService.Excluir(id);
 
-                // Exclusão lógica só altera a situação para removido
-                usuario.Situacao = "Removido";
-                _usuarioRepository.Alterar(usuario);
-                _logger.LogInformation("Usuário {Email} foi removido", usuario.Email);
+            _logger.LogInformation("Usuário {Id} foi removido", id);
 
-                return Ok();
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e);
-            }
+            return NoContent();
         }
-
     }
 }
